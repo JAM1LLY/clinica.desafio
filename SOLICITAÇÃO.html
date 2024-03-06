@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+</head>
+<body style="background-color: transparent; color: rgb(0, 0, 139);">
+    <img src="C:\Users\jamilly.gomes\Downloads\LOGO.CUIDE-SE (1).png" alt="Descrição da imagem" width="250" height="200">
+    <h1 style="font-size: 24px;"><strong>AGENDE SUA CONSULTA:</strong></h1>
+    <form action="processar_formulario.php" method="post">
+        <div><br>
+            <label for="email" style="color: rgb(0, 0, 139); font-size: 20px;">Email:</label>
+            <input type="email" id="email" name="email" required style="background-color: transparent; color: rgb(0, 0, 139); border-color: rgb(0, 0, 139); font-size: 16px;">
+        </div><br>
+        <div>
+            <label for="numero" style="color: rgb(0, 0, 139); font-size: 20px;">Número de Telefone:</label>
+            <input type="tel" id="numero" name="numero" required style="background-color: transparent; color: rgb(0, 0, 139); border-color: rgb(0, 0, 139); font-size: 16px;">
+        </div><br>
+        <div>
+            <label for="nome" style="color: rgb(0, 0, 139); font-size: 20px;">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required style="background-color: transparent; color: rgb(0, 0, 139); border-color: rgb(0, 0, 139); font-size: 16px;">
+        </div><br>
+        <div>
+            <label for="data_nascimento" style="color: rgb(0, 0, 139); font-size: 20px;">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required style="background-color: transparent; color: rgb(0, 0, 139); border-color: rgb(0, 0, 139); font-size: 16px;">
+        </div><br>
+        <div>
+            <label for="atendimento_desejado" style="color: rgb(0, 0, 139); font-size: 20px;">Atendimento Desejado:</label>
+            <select id="atendimento_desejado" name="atendimento_desejado" style="background-color: transparent; color: rgb(0, 0, 139); border-color: rgb(0, 0, 139); font-size: 16px;">
+                <option value="Clínico Geral">Clínico Geral</option>
+                <option value="Cardiologista">Cardiologista</option>
+                <option value="Fisioterapeuta">Fisioterapeuta</option>
+                <option value="Endocrinologista e Nutricionista">Endocrinologista e Nutricionista</option>
+                <option value="Psicólogo">Psicólogo</option>
+            </select>
+        </div><br>
+        <div>
+            <button type="submit" style="background-color: transparent; color: rgb(0, 0, 139); border-color: rgb(0, 0, 139); font-size: 16px;">Enviar</button>
+        </div><br>
+    </form>
+</body>
+</html>
